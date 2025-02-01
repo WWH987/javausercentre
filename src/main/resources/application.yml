@@ -7,7 +7,12 @@ spring:
     password: admin
     url: jdbc:mysql://localhost:3306/clg
 server:
-  port: 808
+  port: 8080
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: false
+  global-config:
+    db-config:
+      logic-delete-field: isDelete
+      logic-delete-value: 1
+      logic-not-delete-value: 0
