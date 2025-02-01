@@ -69,6 +69,11 @@ public class User {
     private Date updateTime;
 
     /**
+     * role 0 - 1/ N - A
+     */
+    private Integer userRole;
+
+    /**
      * isDelete
      */
     @TableLogic
